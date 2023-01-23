@@ -293,3 +293,25 @@ function navbarScroll() {
       }  
     }
   });
+
+  let scrollPos = window.scrollY;
+
+  // grab your header element
+  const header = document.querySelector(".header");
+  
+  // set when the nav shrinks (after __ px)
+  const whenHeaderShrinks = 50;
+  
+  // have the browser "listen" for when the user scrolls
+  window.addEventListener("scroll", function() {
+    scrollPos = window.scrollY;
+    
+    // if scroll position is greater than whenHeaderShrinks (line 7)
+    // add the class "is-fixed"
+    // otherwise, remove the "is-fixed" class
+    if (scrollPos >= whenHeaderShrinks) {
+      header.classList.add("is-shrunk");
+    } else {
+      header.classList.remove("is-shrunk");
+    }
+  });

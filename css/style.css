@@ -2623,3 +2623,19 @@ body {
             transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
   }
 }
+
+/*--SHRINKING LOGO--*/
+
+.logo {
+  height: 600%;
+  width: 800%;
+}
+
+.is-shrunk {
+  height: 45px;  /* define new height here */
+}
+
+.logo-sm{
+  height: 300%;
+  width: 400%;
+}
