@@ -2383,7 +2383,7 @@ body {
   content: "";
   width: 330px;
   height: 330px;
-  background-color: #89cff0;
+
   position: absolute;
   z-index: -1;
   top: 50%;
