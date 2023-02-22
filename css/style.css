@@ -2710,3 +2710,13 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
+.desktop {display: block;}
+.mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+.desktop {display: none;}
+.mobile {display: block;}
+
+}
