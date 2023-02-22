@@ -12,6 +12,25 @@
             display: none;
           }
         }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
     </style>
 
     <!-- Site Icons -->
@@ -36,7 +55,8 @@
     <!-- Color CSS -->
     <link href="css/red.css" rel="stylesheet">
     <link rel="stylesheet" href="css/testStyle.css" rel="stylesheet">
-
+    <link href="scss/main.scss" rel="stylesheet">
+    
     <!-- Google Fonts -->
     <link href='//fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
@@ -358,24 +378,86 @@
         </div>
     </section>
 
-    <section id="Hospedaje">
-    <h2 style="font-family:Brush Script MT ">Hospedaje</h2>
-    <div class="container">
-        <div class="accordion">
-          <dl>
-            <dt><a class="accordionTitle" href="#" style="font-size: 60x; font-family: Verdana;">Opcion 1</a></dt>
-            <dd class="accordionItem accordionItemCollapsed">
-              <p style="font-size: 30x; font-family: Verdana;">Informacion en cuanto arreglemos con los proveedores</p>
-            </dd>
-            <dt><a href="#" class="accordionTitle" style="font-size: 60x; font-family: Verdana;">Opcion 2</a></dt>
-            <dd class="accordionItem accordionItemCollapsed">
-              <p style="font-size: 30x; font-family: Verdana;">Informacion en cuanto arreglemos con los proveedores</p>
-            </dd>
+<section id="Hospedaje">
+<h2 style="font-family:Brush Script MT ">Hospedaje</h2>
 
-          </dl>
-        </div>
-    </div>
-    </section>
+<div class="article-content g-px-15">
+    
+
+    
+            
+        <button class="accordion">La Feliciana</button>
+            <div class="panel">
+                Two Equal Columns</h2>
+
+                <div class="row">
+                  <div class="column" style="background-color:#aaa;">
+                    <p>Quédate en el lugar del evento</p>
+                    <p>Cuentan con 1 cama tamaño King</p>
+                    <p>Ubicado en el centro de San Miguel</p>
+                    <p>Incluye desayuno y estacionamiento</p>
+                    <p>Solo se alquilan para el 29 y 30 de diciembre</p>
+                  </div>
+                  <div class="column" style="background-color:#bbb;">
+                    <h2>Column 2</h2>
+                    <p>Some text..</p>
+                  </div>
+                </div>
+            </div>
+                
+        <button class="accordion">GET THE APP &amp; ACCESS YOUR TICKETS</button>
+            <div class="panel">
+                <div class="row flex flex-wrap">
+                   <div class="flexbox-container g-py-15">
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Go to GoCards.com/CardsMobile and download the official CardsMobile app. Available on Google Play and the iTunes App Store.</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/9/get_app_1.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Tap the CardsMobile app icon and then tap the "Tickets" icon in the bottom nav.</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_2.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Tap the "Sign in to Louisville" button.</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_3.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Log in using the email address and password associated with your 'My Cardinals Account.'</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_4.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">To complete login and be redirected to your account, tap "Authorize."</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_5.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Tap the +Person icon in the bottom right of the screen.</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_6.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">Enter your Ticketmaster.com credentials.<br />*Note: Your login information may not be the same as your CAF/My Cardinals Account.</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_7.png" border="0"></div>
+                    </div>
+
+                    <div class="small-12 medium-12 large-4 columns g-px-5">
+                        <div class="directions g-mb-0">To complete log in and merge your accounts, tap "Authorize."</div>
+                        <div class="screenshots"><img src="https://gocards.com/images/2018/8/14/get_app_8.png" border="0"></div>
+                    </div>
+
+                </div>
+               </div>
+            </div>
+
+
+                
+</div>
+
+</section>
 
 <section id="Regalos">    
 <h2 style="font-family:Brush Script MT ">Regalo de Bodas</h2>

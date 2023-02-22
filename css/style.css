@@ -2640,3 +2640,68 @@ body {
   width: 400%;
 }
 
+
+.accordion {
+  background-color: #c92027;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.075rem;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#mobile-content {
+  background-color: #ddd;
+  width: 100%;
+}
+
+.uofl-red {
+  color: #c92027;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flexbox-item {
+  /*flex-basis: 33%;*/
+  align-self: flex-end;
+}
+.directions {
+  text-align: center;
+  min-height: 65px;
+}
+  
+.screenshots {
+  text-align: center;
+}
+
